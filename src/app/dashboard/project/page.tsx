@@ -2,8 +2,8 @@
 
 import React, { useState } from 'react';
 import ProjectList from '@/components/Dashboard/project/ProjectList';
-import ProjectDetails from '@/components/Dashboard/project/ProjectDetails';
-import AddProject from '@/components/Dashboard/project/AddProject';
+// import ProjectDetails from '@/components/Dashboard/project/ProjectDetails';
+// import AddProject from '@/components/Dashboard/project/AddProject';
 import Button from '@/components/form/Button';
 import { Download } from 'lucide-react';
 
@@ -92,7 +92,7 @@ const Project = () => {
             onAddClick={() => handleTabChange('add')}
           />
         )}
-        {currentView === 'details' && selectedProjectId && (
+        {/* {currentView === 'details' && selectedProjectId && (
           <ProjectDetails
             projectId={selectedProjectId}
             onBack={() => handleViewChange('list')}
@@ -100,7 +100,7 @@ const Project = () => {
         )}
         {currentView === 'add' && (
           <AddProject onBack={() => handleTabChange('records')} />
-        )}
+        )} */}
       </div>
     </div>
   );
